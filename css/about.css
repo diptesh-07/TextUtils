@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Noticia+Text&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",Arial, sans-serif;
+}
+.aboutbody{
+    overflow-y: hidden;
+    background-color:#6fc8c5 ;
+}
+.About_Us{
+    text-decoration: none;
+   color: black;
+}
+.Myabout p{
+    margin-top: 10px;
+    font-family: 'Noticia Text', serif;
+    display: flex;
+    /* justify-content: center; */
+    /* margin: 0%; */
+    font-size: 50px;
+    font-weight: lighter;
+    border-bottom: 2px solid black;
+}
+p{
+  top: 1px;
+}
+
+.aboutnav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    border-style: solid;
+    border-top-width: 2px;
+    border-top: black;
+    border-width: 2px;
+    border-left: none;
+    border-right: none;
+    margin: 0px;
+    border-bottom: 2px solid black;
+}
+.aboutnav ul li{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    text-decoration: none; 
+    cursor: pointer;
+    font-size: 21px;
+    padding-right: 7px;
+    padding-left: 54px;
+    margin: 8px;
+}
+.myHome{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+}
+.container h3{
+    padding-top: 17px;
+}
+.content li{
+    font-weight: bold;
+    padding-bottom: 19px;
+}
+
+    /* Dropdown Button */
+    .dropbtn {
+      display: flex;
+      position: relative;
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 7px;
+      margin: 2px;
+      top: 8px;
+    left: 28px;
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 7px;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border-radius: 7px;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      
+      background-color: skyblue;}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: green;}
+  
+  
+  
+    

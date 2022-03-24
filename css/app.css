@@ -1,0 +1,340 @@
+/* { * } is applyed for all the html */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* main textutils logo  */
+.logo {
+  text-decoration: none;
+  color: black;
+  size: 30px;
+  font-size: 1.4rem;
+}
+
+.myHome {
+  text-decoration: none;
+}
+
+body {
+  display: block;
+  background-color: white;
+  overflow-x: hidden;
+  transition: background 0.8s;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body.dark {
+  background-color: #292c35;
+  transition: background 0.8s;
+}
+
+/* css used for navigetion bar */
+.Navbar {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+nav ul {
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  color: black;
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  height: 56px;
+  background-color: #292c35;
+  /* background-color: #f8f9fa; */
+  transition: background 0.8s;
+}
+
+.About_Us {
+  text-decoration: none;
+}
+
+body.dark ul {
+  background-color: #f8f9fa;
+  transition: background 0.8s;
+}
+
+/* nav > li where targeted */
+nav li {
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+body.dark li {
+  color: #292c35;
+}
+
+/* h1 is targeted */
+.starterline h1 {
+  color: #042743;
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+  margin: 0px 0px 8px;
+  margin-block-start: 0.67em;
+  margin-block-end: -2em;
+  margin-inline-start: 126px;
+  margin-inline-end: 0px;
+  /* font-weight: bold; */
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+
+}
+
+body.dark h1 {
+  color: white;
+}
+
+/* inner side of text area */
+.TextWriter {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  outline: none;
+  top: 132px;
+  left: 122px;
+  padding-top: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  border: 1px solid blue;
+  text-decoration: none;
+  border-radius: 9px;
+  font-size: 18px;
+  overflow: none;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+.TextWriter:focus {
+  border: 4px solid #c2dbfe;
+
+}
+
+body.dark.TextWriter {
+  background-color: #6fc8c5;
+  border: 1px solid white;
+
+}
+
+body.dark.TextWriter:focus {
+  border: 4px solid #c2dbfe;
+
+}
+
+/* where text actually typed */
+TextUtils {
+  position: absolute;
+  outline-width: none;
+  border-color: solid royalblue;
+  border-width: 20px;
+  border-radius: 7px;
+  padding-top: 6px;
+  padding-left: 2px;
+}
+
+h2 {
+  display: flex;
+  position: absolute;
+  color: black;
+  position: absolute;
+  top: 447px;
+  left: 125px;
+}
+
+body.dark h2 {
+  color: white;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 500px;
+  left: 140px;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body.dark h3 {
+  color: white;
+}
+
+/* button designing */
+.bn5 {
+  padding: 8px;
+  text-decoration: none;
+  border: 0px solid skyblue;
+  outline: none;
+  color: black;
+  /* color: rgb(255, 255, 255); */
+  background: #0d6efd;
+  border-color: #0d6efd;
+  cursor: pointer;
+  position: relative;
+  top: 347px;
+  left: 126px;
+  z-index: 0;
+  border-radius: 0.25rem;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* css for dark mode button */
+body.dark .bn5 {
+  color: white;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.Switch {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 0vh;
+  right: 23px;
+  bottom: 28px;
+  position: relative;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* css for switch */
+.label {
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px;
+  border-radius: 50px;
+  height: 26px;
+  width: 50px;
+}
+
+body.dark label {
+  background-color: black;
+}
+
+.Checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.fa-sun {
+  color: #f1c40f;
+}
+
+.fa-moon {
+  color: #f39c12;
+}
+
+.boll {
+  background-color: black;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  transition: transform 0.3s linear;
+}
+
+body.dark .boll {
+  background-color: white;
+}
+
+.Checkbox:checked+.label .boll {
+  /*when checkbox checked like if condition*/
+  transform: translateX(24px);
+}
+
+/* .noselect for anonying selection of button */
+.noselect {
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+#show {
+  position: relative;
+  left: 8px;
+}
+
+.counter {
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}

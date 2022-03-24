@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- linking css  -->
+  <link rel="stylesheet" href="/css/app.css" />
+  <!-- font-awesome from cloudflare for icons of switches -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <div>
+    <nav>
+      <ul>
+        <a class="logo" href="index.html">
+          <li>TextUtils</li>
+        </a>
+        <a href="index.html" class="myHome">
+          <li>Home</li>
+        </a>
+        <a class="About_Us" href="about.html">
+          <li>About</li>
+        </a>
+      </ul>
+    </nav>
+  </div>
+  <!-- switch -->
+  <div class="Switch">
+    <input type="Checkbox" class="Checkbox" id="Checkbox" />
+    <label for="Checkbox" class="label">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+      <div class="boll"></div>
+    </label>
+  </div>
+  <div class="starterline">
+    <h1>Enter The Text To Convert</h1>
+  </div>
+
+  <div>
+    <textarea type="text" maxlength="5000" oninput="countWord()" name="TextUtils" placeholder="Enter Text Here....."
+      value="submit" class="TextWriter" id="TextWriter" cols="145" rows="10"></textarea>
+  </div>
+  <!-- button  -->
+  <div class="mybtn noselect">
+    <a id="UpperCase_btn1" class="bn5">Convert To UpperCase</a>
+    <a id="LowerCase_btn2" class="bn5">Convert To LowerCase</a>
+    <a id="Copy_btn3" onclick="copythetext()" class="bn5">Copy Text</a>
+    <a id="Clear_btn4" class="bn5">Clear Text</a>
+    <a id="Spaces_btn5" class="bn5">Remove Extra Spaces</a>
+  </div>
+
+
+  <!-- class="h2dark" -->
+  <h2>Your Text Summary</h2>
+  <div>
+    <h3 class="preview">
+      <span id="charcounter">0</span>
+      <pre class="counter"> Characters And</pre>
+      <span id="show">0</span>
+      <pre class="counter">   Words</pre>
+    </h3>
+  </div>
+
+  <!-- javascript linking -->
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
