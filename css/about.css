@@ -15,7 +15,9 @@
   text-decoration: none;
   color: black;
 }
-
+.navitems li{
+  text-decoration: none;
+}
 .Myabout p {
   margin-top: 10px;
   font-family: 'Noticia Text', serif;
