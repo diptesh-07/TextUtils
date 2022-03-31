@@ -9,15 +9,14 @@
 .aboutbody {
   overflow-y: hidden;
   background-color: #262a33;
+  /* background: linear-gradient(to right, #FF4B2B, #FF416C); */
 }
 
-.navitems {
+.About_Us {
   text-decoration: none;
   color: black;
 }
-.navitems li{
-  text-decoration: none;
-}
+
 .Myabout p {
   margin-top: 10px;
   font-family: 'Noticia Text', serif;
@@ -67,6 +66,11 @@ p {
   margin: 8px;
 }
 
+.myHome {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   display: flex;
 }
@@ -114,7 +118,8 @@ h3 {
 .dropbtn {
   display: flex;
   position: relative;
-  background-color: #04AA6D;
+  /* background-color: #04AA6D; */
+  background: linear-gradient(to right, #FF4B2B, #FF416C);
   color: white;
   padding: 16px;
   font-size: 16px;

@@ -70,3 +70,10 @@ function copythetext() {
   // alert("Copied the text: " + copyText.value);
 }
 
+// function clearText(){
+//   let Clrtext = document.getElementById("TextWriter");
+
+
+
+
+// }
