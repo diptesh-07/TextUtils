@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Noticia+Text&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
@@ -104,7 +105,6 @@ h3 {
   width: 859px;
   left: 104px;
 }
-
 .aboutnav {
   display: flex;
   margin: 0;
@@ -190,7 +190,7 @@ h3 {
   position: relative;
   color: #8A94A7;
   text-decoration: none;
-  bottom: 10px;
+  bottom: 52px;
   left: 741px;
 }
 
@@ -266,7 +266,8 @@ h3 {
 .footer-copyright{
   color: white;
   position: relative;
-  left: 98px;
+  left: 40px;
+  bottom: 40px;
 
 }
 .list-reset{
@@ -275,3 +276,4 @@ h3 {
   top: 10px;
   right: 10px;
 }
+

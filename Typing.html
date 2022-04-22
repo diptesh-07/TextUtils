@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome from cloudflare for icons of switches -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- linking css -->
+    <link rel="stylesheet" href="css/Typing.css">
+    <title>TextUtils - Speed Test</title>
+</head>
+
+<body>
+<header class="navbar">
+    <div>
+        <nav>
+        <ul class="navelements">
+            <a class="logo" href="index.html"><!-- use dot in src img of logo for github pages --><img src="./svg/logo copy.svg" alt="reload your page"></a>
+            <a href="index.html" class="navitems"><li>Home</li></a>
+            <a class="navitems About_Us" href="about.html"><li>About</li>
+            <a class="navitems About_Us" href="contact_Us.html"><li>Contact Us</li></a>
+        </ul>
+    </nav>
+</div>
+    <!-- switch start here -->
+<div class="Switch">
+        <input type="Checkbox" class="Checkbox" id="Checkbox" />
+        <label for="Checkbox" class="label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="boll"></div>
+        </label>
+</div>
+
+<div class="container">
+    <div class="heading">
+        TextUtils - Speed Test
+    </div>
+    <div class="header">
+        <div class="wpm">
+            <div class="header_text">WPM</div>
+            <div class="curr_wpm">100</div>
+        </div>
+        <div class="cpm">
+            <div class="header_text">CPM</div>
+            <div class="curr_cpm">100</div>
+        </div>
+        <div class="errors">
+            <div class="header_text">Errors</div>
+            <div class="curr_errors">0</div>
+        </div>
+        <div class="timer">
+            <div class="header_text">Time</div>
+            <div class="curr_time">60s</div>
+        </div>
+        <div class="accuracy">
+            <div class="header_text">% Accuracy</div>
+            <div class="curr_accuracy">100</div>
+        </div>
+    </div>
+
+    <div class="quote">
+        Click on the area below to start Typing Practice.
+    </div>
+
+    
+</header>
+<section class="mid">
+    <div class="horizontal"></div>
+    <textarea type="text" maxlength="5000"  name="TextUtils" placeholder="Enter Text Here....."
+    value="submit" class="TextWriter input_area" id="TextWriter" oninput="processCurrentText()"  onfocus="startPractice()" cols="145" rows="10"></textarea>
+    <span class="para" id="paragraph"></span>
+    <div class="horizontal2"></div>
+</section>
+<footer class="foot">
+        <button class="restart_btn" onclick="resetValues()">Restart</button>
+        </div>
+
+</footer>
+</body>
+<!-- adding javascript -->
+<script type="text/javascript" src="js/Typing.js"></script>
+</html>

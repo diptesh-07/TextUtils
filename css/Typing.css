@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,400;1,300&display=swap');
+
+body {
+    overflow-x: hidden;
+    transition: background 0.8s;
+
+}
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* main textutils logo  */
+.logo img {
+    text-decoration: none;
+    color: black;
+    size: 30px;
+    font-size: 1.4rem;
+    max-width: 213px;
+    max-height: 80px;
+}
+
+.navitems {
+    text-decoration: none;
+    color: white;
+}
+
+.navitems li:hover {
+    color: skyblue;
+}
+
+
+body.dark {
+    background-color: #292c35;
+    transition: background 0.8s;
+}
+
+/* css used for navigetion bar */
+.navelements {
+
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, sans-serif;
+    color: black;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    height: 56px;
+    background-color: #292c35;
+    /* background-color: #f8f9fa; */
+    transition: background 0.8s;
+
+}
+
+nav ul {
+
+    width: 100%;
+}
+
+body.dark ul {
+    transition: background 0.8s;
+    background-color: #464d51;
+    /* other color options */
+    /* background-color: #000000; */
+    /* background-color: #3b4147; */
+    /* background-image: linear-gradient(274deg, #7F8E89 17%, #292c35 72%); */
+}
+
+/* nav > li where targeted */
+nav li {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+body.dark li {
+    color: white;
+}
+
+body.dark .heading {
+    color: white;
+}
+
+/* dark and light mode switch css */
+.label {
+    box-sizing: border-box;
+    /* background-color: white; */
+    background-color: #464d51;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding: 5px;
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+    right: 30px;
+    top: 15px;
+}
+
+body.dark label {
+    background-color: #292c35;
+}
+
+.Checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.fa-sun {
+    color: #29f500;
+}
+
+.fa-moon {
+    color: white;
+}
+
+.boll {
+    background-color: #0d6efd;
+    /* background-color: black; */
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    transition: transform 0.3s linear;
+
+}
+
+body.dark .boll {
+    /* background-color: white; */
+    background-color: #0d6efd;
+}
+
+.boll:hover {
+    background-color: #0d6efd;
+}
+
+body.dark .boll:hover {
+
+    background-color: #0d6efd;
+}
+
+.Checkbox:checked+.label .boll {
+    /*when checkbox checked like if condition*/
+    transform: translateX(24px);
+}
+
+/* dark and light mode switch css end here */
+
+.mid {
+    display: flex;
+}
+.TextWriter {
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+    outline: none;
+    top: 70px;
+    /* left: 100px; */
+    padding: 6px;
+    border: 1px solid blue;
+    border: none;
+    text-decoration: none;
+    border-radius: 9px;
+    font-size: 18px;
+    margin: auto;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* overflow: hidden; */
+    width: 70%;
+}
+
+.input_area {
+    /* background-color: #f5f5c6; */
+    height: 120px;
+    width: 40%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 15px;
+    padding: 7px;
+    border: 0px;
+    top: 64px;
+    left: 428px;
+    border: 1px solid blue;
+    /* box-shadow: black 5px 8px 5px; */
+}
+
+.horizontal {
+    display: flex;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    top: 115px;
+
+}
+
+.horizontal2 {
+    display: flex;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    top: 375px;
+
+}
+
+.TextWriter:focus {
+    border: 4px solid #c2dbfe;
+
+}
+
+body.dark.TextWriter {
+    background-color: #6fc8c5;
+    border: 1px solid white;
+
+}
+
+body.dark.TextWriter:focus {
+    border: 4px solid #c2dbfe;
+
+}
+
+.firstarea {
+    position: absolute;
+    overflow-x: hidden;
+    top: 126px;
+    left: 8%;
+}
+
+.secondarea {
+    position: absolute;
+    top: 126px;
+    left: 55%;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    left: 10px;
+}
+
+.header1 {
+    display: flex;
+    position: absolute;
+    left: 116px;
+    list-style-type: none;
+    font-size: 31px;
+    top: 20px;
+}
+
+.header2 {
+    display: flex;
+    position: absolute;
+    left: 827px;
+    list-style-type: none;
+    font-size: 31px;
+    top: 20px;
+}
+
+/* where text actually typed */
+TextUtils {
+    position: absolute;
+    outline-width: none;
+    border-color: solid royalblue;
+    border-width: 20px;
+    border-radius: 7px;
+    padding-top: 6px;
+    padding-left: 2px;
+
+}
+
+
+/* section start here */
+
+#focus {
+    background: rgba(255, 0, 0, 0.7);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.mono {
+    font-family: "Cutive Mono", monospace;
+}
+
+.wrong {
+    background: #99f;
+    color: #fff;
+}
+
+hr {
+    margin: 1em 0;
+    max-width: 800px;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+}
+
+.results {
+    position: absolute;
+    top: 300px;
+    /* left: 0;
+    right: 0; */
+}
+
+.stats {
+    overflow: hidden;
+    margin-bottom: 1em;
+    height: 100px;
+    list-style: none;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 900;
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+.stats li {
+    width: 25%;
+    float: left;
+}
+
+.target {
+    color: #fff;
+    text-align: left;
+    font-size: 32px;
+    min-width: 300px;
+    min-height: 40px;
+    width: 600px;
+    display: inline - block;
+    position: relative;
+    white-space: pre;
+    background: #333;
+    box-shadow: inset 0 0 10px 0 rgba(255, 255, 255, 0.2);
+    padding: 22px 10px 10px;
+    left: 30%;
+    top: 12px;
+}
+
+.target:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: #f00;
+    left: 10px;
+    top: 53px;
+    -webi-animation: cursor_flash 0.5s infinite;
+    animation: cursor_flash 0.5s infinite;
+}
+
+.target:before {
+    font-family: Roboto;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    content: "Type the text below";
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+    position: absolute;
+    color: #fff;
+}
+
+@-webkit-keyframes cursor_flash {
+    0% {
+        background: #fff;
+    }
+
+    50% {
+        background: #99f;
+    }
+
+    100% {
+        background: #fff;
+    }
+}
+
+@keyframes cursor_flash {
+    0% {
+        background: #fff;
+    }
+
+    50% {
+        background: #99f;
+    }
+
+    100% {
+        background: #fff;
+    }
+}
+
+.button {
+    display: inline - block;
+    padding: 8px 10px;
+    background: #057f24;
+    border-radius: 2px;
+    color: #fff;
+}
+
+#textarea {
+    position: absolute;
+}
+
+.spell {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.spell span {
+    color: #2222ff;
+}
+
+.textarea {
+    color: #fff;
+    width: 60%;
+    margin: 1em auto;
+    display: flex;
+    position: relative;
+    white-space: pre;
+    background: #333;
+    box-shadow: inset 0 0 10px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.your-attempt {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    min-height: 100px;
+    border: 1px solid #555;
+    max-width: 600px;
+    margin: 2em auto;
+    white-space: pre-wrap;
+}
+
+.results {
+    font-family: Roboto;
+}
+
+.settings {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3px 6px 6px;
+    background: #444;
+    font-family: Roboto, sans - serif;
+    color: #999;
+    text-align: left;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    border-top: 3px solid #222;
+    font-size: 12px;
+}
+
+.settings a {
+    color: #fff;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.settings a:hover {
+    color: #ccf;
+}
+
+
+/* stats */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.timer, .errors, .accuracy,
+.cpm, .wpm {
+    background-color: #ccda46;
+    height: 60px;
+    width: 70px;
+    margin: 8px;
+    padding: 12px;
+    border-radius: 20%;
+    box-shadow: black 5px 8px 5px;
+}
+
+.cpm, .wpm {
+    display: none;
+}
+
+.header_text {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.curr_time, .curr_errors,
+.curr_accuracy, .curr_cpm,
+.curr_wpm {
+    font-size: 2.75rem;
+}
+
+.quote {
+    background-color: #ccda46;
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 25px;
+    box-shadow: black 5px 8px 5px;
+}
+
+.restart_btn {
+    color: black;
+    position: absolute;
+    background: #0d6efd;
+    border-color: #0d6efd;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    border: 0px solid skyblue;
+    padding: 8px;
+    outline: none;
+    /* color: rgb(255, 255, 255); */
+    cursor: pointer;
+    z-index: 0;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    left: 29%;
+    top: 79%;
+    font-size: 20px;
+}
+
+.restart_btn:hover{
+    color: white;
+}

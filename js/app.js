@@ -14,10 +14,26 @@ document.getElementById("UpperCase_btn1").onclick = function () {
 
 //function for modify text into lowercase
 
+//  function for lowercase text
 document.getElementById("LowerCase_btn2").onclick = function () {
   var upperString = document.getElementById("TextWriter").value.toLowerCase();
   document.getElementById("TextWriter").value = upperString;
 };
+
+//  function for clear the text
+document.getElementById("Clear_btn4").onclick = function () {
+  document.getElementById("TextWriter").value = "";
+};
+
+//  function for remove extra spaces
+document.getElementById("Spaces_btn5").onclick = function trimSpaces() {
+  s = document.getElementById("TextWriter").value;
+  s = s.replace(/(^\s*)|(\s*$)/gi, "");
+  s = s.replace(/[ ]{2,}/gi, "");
+  s = s.replace(/\n /, "\n");
+  document.getElementById("TextWriter").value = s;
+}
+
 
 // function for word counter
 function countWord() {
@@ -70,10 +86,3 @@ function copythetext() {
   // alert("Copied the text: " + copyText.value);
 }
 
-// function clearText(){
-//   let Clrtext = document.getElementById("TextWriter");
-
-
-
-
-// }
